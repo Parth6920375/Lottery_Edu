@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px; /* Increased font size for better visibility */
+  line-height: 1.8em;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 5%, rgba(29,244,253,1) 45%, rgba(255,62,238,1) 83%);
+  background-size: 200% 200%; /* For wave animation */
+  color: white;
+  overflow-x: hidden;
+  display: flex; /* Add Flexbox */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  height: 100vh; /* Full viewport height */
+  animation: waveBackground 8s ease infinite; /* Wave animation */
+}
+
+/* Container Styles */
+.container {
+  max-width: 940px;
+  width: 100%; /* Ensure responsiveness */
+  padding: 50px 30px; /* Increased padding for spacious layout */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for container */
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Center the text inside the container */
+  backdrop-filter: blur(10px); /* Glass effect */
+}
+
+h1 {
+  font-size: 3rem; /* Increased font size */
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 2rem; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px 25px; /* Increased padding */
+  font-size: 1.2rem; /* Increased font size */
+  background-color: #38CCCC;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: #38CCCC;
+  border-color: #38CCCC;
+}
+
+/* Lists */
+#players-list {
+  padding: 0;
+  margin: 20px 0;
+}
+
+#players-list li {
+  background-color: #99CCCC;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Manager and Winner Info */
+#manager-info, #last-winner-info {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#manager-info p, #last-winner-info p {
+  font-size: 1.4rem;
+}
+
+strong {
+  color: rgba(131,58,180,1);
+}
+
+/* Status Message */
+#status {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 680px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Keyframes for wave background animation */
+@keyframes waveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

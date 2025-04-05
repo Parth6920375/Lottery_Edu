@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery DApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lottery DApp</h1>
+        <div id="manager-info">
+            <p><strong>Manager:</strong> <span id="manager"></span></p>
+        </div>
+        <div id="last-winner-info">
+            <p><strong>Last Winner:</strong> <span id="last-winner"></span></p>
+        </div>
+        <button id="become-manager">Become Manager</button>
+        <button id="enter-lottery">Enter Lottery (1 GAS)</button>
+        <button id="pick-winner">Pick Winner</button>
+        <div id="players-info">
+            <h2>Players:</h2>
+            <ul id="players-list"></ul>
+        </div>
+        <p id="status"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
